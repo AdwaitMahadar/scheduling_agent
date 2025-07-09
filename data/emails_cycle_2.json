@@ -1,0 +1,35 @@
+[
+  {
+    "thread_id": "T2",
+    "messages": [
+      {
+        "sender": "you@example.com",
+        "recipient": "sam@friends.com",
+        "timestamp": "2025-07-09T09:15:00",
+        "body": "Sure, 1pm lunch sounds good. Let's do it."
+      }
+    ]
+  },
+  {
+    "thread_id": "T4",
+    "messages": [
+      {
+        "sender": "you@example.com",
+        "recipient": "you@example.com",
+        "timestamp": "2025-07-09T09:30:00",
+        "body": "Reminder to check out BestBuy's electronics sale sometime today."
+      }
+    ]
+  },
+  {
+    "thread_id": "T5",
+    "messages": [
+      {
+        "sender": "you@example.com",
+        "recipient": "you@example.com",
+        "timestamp": "2025-07-09T09:45:00",
+        "body": "Pick up dry cleaning before they close at 5pm."
+      }
+    ]
+  }
+]

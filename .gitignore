@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+.env
+.venv/
+env/
+venv/
+
+# Output files
+output/
+store/
+
+# Mac system files
+.DS_Store

@@ -1,0 +1,10 @@
+openai>=1.11.0
+judgeval>=0.0.50
+python-dotenv>=1.0.1
+
+# Optional but useful dependencies included by judgeval:
+matplotlib>=3.10.3
+pandas>=2.3.0
+langchain-core>=0.3.68
+langchain-openai>=0.3.27
+litellm==1.61.15

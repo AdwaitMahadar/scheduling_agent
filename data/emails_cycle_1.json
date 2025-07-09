@@ -1,0 +1,35 @@
+[
+  {
+    "thread_id": "T1",
+    "messages": [
+      {
+        "sender": "dr.lee@smiles.com",
+        "recipient": "you@example.com",
+        "timestamp": "2025-07-09T08:00:00",
+        "body": "Hi, confirming your dentist appointment today at 10am at Bright Smiles Clinic."
+      }
+    ]
+  },
+  {
+    "thread_id": "T2",
+    "messages": [
+      {
+        "sender": "sam@friends.com",
+        "recipient": "you@example.com",
+        "timestamp": "2025-07-09T08:30:00",
+        "body": "Lunch at 1pm today? There's a new Thai place I wanna try!"
+      }
+    ]
+  },
+  {
+    "thread_id": "T3",
+    "messages": [
+      {
+        "sender": "bank@money.com",
+        "recipient": "you@example.com",
+        "timestamp": "2025-07-09T08:45:00",
+        "body": "We\u2019ve booked your 11am loan appointment at our Greenfield Branch."
+      }
+    ]
+  }
+]

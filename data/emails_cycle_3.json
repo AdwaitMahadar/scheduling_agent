@@ -1,0 +1,35 @@
+[
+  {
+    "thread_id": "T3",
+    "messages": [
+      {
+        "sender": "bank@money.com",
+        "recipient": "you@example.com",
+        "timestamp": "2025-07-09T10:15:00",
+        "body": "Our officer is now only free at 2pm. Can we reschedule your loan appointment?"
+      }
+    ]
+  },
+  {
+    "thread_id": "T2",
+    "messages": [
+      {
+        "sender": "sam@friends.com",
+        "recipient": "you@example.com",
+        "timestamp": "2025-07-09T10:45:00",
+        "body": "Change of plans — let's cancel lunch for today. Sorry!"
+      }
+    ]
+  },
+  {
+    "thread_id": "T6",
+    "messages": [
+      {
+        "sender": "store@bodega.com",
+        "recipient": "you@example.com",
+        "timestamp": "2025-07-09T11:00:00",
+        "body": "Flash sale ending at 12pm today. Visit our store if you can!"
+      }
+    ]
+  }
+]
