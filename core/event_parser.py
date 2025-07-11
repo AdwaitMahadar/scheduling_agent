@@ -1,6 +1,6 @@
 # core/event_parser.py
 
-from core.utils import extract_sender, extract_thread_id, call_llm_for_event_attrs
+from core.utils import call_llm_for_event_attrs
 
 def extract_events_from_emails(email_threads):
     events = []
@@ -10,7 +10,7 @@ def extract_events_from_emails(email_threads):
         messages = thread["messages"]
         latest_msg = messages[-1]
 
-        sender = extract_sender(latest_msg)
+        sender = latest_msg["sender"]
         recipient = latest_msg["recipient"]
         body = latest_msg["body"]
         timestamp = latest_msg["timestamp"]
@@ -21,13 +21,14 @@ def extract_events_from_emails(email_threads):
             "event_id": None,
             "thread_id": thread_id,
             "sender": sender,
+            "recipient": recipient,
             "title": llm_data.get("title") or "Unknown Event",
             "priority": llm_data.get("priority") or "Low",
             "time": llm_data.get("time"),
             "venue": llm_data.get("venue"),
             "body": llm_data.get("summary") or body,
             "scheduling_status": None,
-            "schedule_change": False,
+            "schedule_change": True,
             "last_updated": timestamp
         }
 
