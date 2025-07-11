@@ -8,16 +8,6 @@ from config import OPENAI_API_KEY
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 
-# def extract_sender(msg):
-#     return msg["sender"]
-
-# def extract_thread_id(thread):
-#     return thread["thread_id"]
-
-# def get_cycle_number_from_filename(filename):
-#     # Assumes filename like: emails_cycle_1.json
-#     return filename.split("_")[-1].split(".")[0]
-
 def save_json(data, path):
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
@@ -173,15 +163,6 @@ Respond with the full updated list of events (same structure), but with scheduli
     except Exception as e:
         print(f"LLM scheduling error: {e}")
         return events  # fallback
-
-
-# def save_schedule(events, output_dir="output/schedules"):
-#     os.makedirs(output_dir, exist_ok=True)
-#     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-#     path = os.path.join(output_dir, f"schedule_{timestamp}.json")
-#     with open(path, "w") as f:
-#         json.dump(events, f, indent=2)
-#     return path
 
 def call_llm_for_response_email(event):
     """
