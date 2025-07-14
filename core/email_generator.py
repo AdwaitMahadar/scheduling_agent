@@ -1,7 +1,9 @@
 # core/email_generator.py
 
 from core.utils import call_llm_for_response_email
+from judgeval_integration.tracer import judgment
 
+@judgment.observe(span_type="function")
 def generate_response_emails(final_events):
     responses = []
 

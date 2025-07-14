@@ -9,7 +9,9 @@ env/
 venv/
 
 # Output files
-output/
+output/emails/
+output/schedules/
+output/expected_schedules/
 store/
 
 # Mac system files

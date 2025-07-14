@@ -1,7 +1,9 @@
 # core/event_parser.py
 
 from core.utils import call_llm_for_event_attrs
+from judgeval_integration.tracer import judgment
 
+@judgment.observe(span_type="function")
 def extract_events_from_emails(email_threads):
     events = []
 

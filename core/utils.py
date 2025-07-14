@@ -2,16 +2,15 @@
 
 import os
 import json
-from datetime import datetime
-from openai import OpenAI
-from config import OPENAI_API_KEY
+from judgeval_integration.tracer import judgment, client
 
-client = OpenAI(api_key=OPENAI_API_KEY)
 
 def save_json(data, path):
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
+        
 
+@judgment.observe(span_type="llm")
 def call_llm_for_event_attrs(sender, recipient, body):
     prompt = f"""
 You are an assistant that extracts structured event details from an email message.
@@ -55,7 +54,8 @@ If any value is not available, set it to null.
             "time": None,
             "venue": None
         }
-    
+
+@judgment.observe(span_type="llm")
 def call_llm_for_event_match(event_a, event_b):
     """
     Use LLM to decide if event_a and event_b are updates of the same real-world event.
@@ -87,6 +87,7 @@ Answer only with true or false.
         print(f"LLM match error: {e}")
         return False
 
+@judgment.observe(span_type="llm")
 def call_llm_merge_event_group(group):
     """
     Merge a group of events (updates to same task) into one canonical event.
@@ -132,6 +133,7 @@ Respond in JSON with the merged event:
         print(f"LLM merge error: {e}")
         return group[-1]  # fallback to latest
 
+@judgment.observe(span_type="llm")
 def call_llm_schedule_events(events):
     """
     Ask LLM to assign scheduling_status and schedule_change for each final merged event.
@@ -164,6 +166,7 @@ Respond with the full updated list of events (same structure), but with scheduli
         print(f"LLM scheduling error: {e}")
         return events  # fallback
 
+@judgment.observe(span_type="llm")
 def call_llm_for_response_email(event):
     """
     Uses LLM to generate a natural language response email for an event.

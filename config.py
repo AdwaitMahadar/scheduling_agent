@@ -17,6 +17,7 @@ EMAIL_DATA_DIR = os.path.join(BASE_DIR, "data")
 OUTPUT_EMAILS_DIR = os.path.join(BASE_DIR, "output", "emails")
 OUTPUT_SCHEDULES_DIR = os.path.join(BASE_DIR, "output", "schedules")
 EVENT_STORE_PATH = os.path.join(BASE_DIR, "store", "event_store.json")
+EXPECTED_SCHEDULES_DIR = os.path.join(BASE_DIR, "output", "expected_schedules")
 
 # === Email Cycles ===
 EMAIL_FILES = {
