@@ -13,6 +13,7 @@ output/emails/
 output/schedules/
 output/expected_schedules/
 store/
+test/
 
 # Mac system files
 .DS_Store
