@@ -15,9 +15,6 @@ output/emails/*
 output/schedules/*
 !output/schedules/.gitkeep
 
-output/expected_schedules/*
-!output/expected_schedules/.gitkeep
-
 store/*
 !store/.gitkeep
 

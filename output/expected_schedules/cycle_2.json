@@ -1,0 +1,38 @@
+[
+  {
+    "sender": "dr.lee@smiles.com",
+    "recipient": "you@example.com",
+    "title": "Dentist Appointment",
+    "priority": "Medium",
+    "time": "10:00",
+    "venue": "Bright Smiles Clinic",
+    "body": "Dentist appointment at 10am at Bright Smiles Clinic"
+  },
+  {
+    "sender": "sam@friends.com",
+    "recipient": "you@example.com",
+    "title": "Lunch",
+    "priority": "Medium",
+    "time": "13:00",
+    "venue": "Thai Place",
+    "body": "Lunch with Sam at 1pm at Thai Place"
+  },
+  {
+    "sender": "bank@money.com",
+    "recipient": "you@example.com",
+    "title": "Loan Appointment",
+    "priority": "Medium",
+    "time": "11:00",
+    "venue": "Greenfield Branch",
+    "body": "Loan appointment at 11am at Greenfield Branch"
+  },
+  {
+    "sender": "you@example.com",
+    "recipient": "you@example.com",
+    "title": "Pick up dry cleaning",
+    "priority": "Medium",
+    "time": "17:00",
+    "venue": null,
+    "body": "Pick up dry cleaning before 5pm"
+  }
+]
