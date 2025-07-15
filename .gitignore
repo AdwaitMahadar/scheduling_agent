@@ -8,12 +8,21 @@ __pycache__/
 env/
 venv/
 
-# Output files
-output/emails/
-output/schedules/
-output/expected_schedules/
-store/
-test/
+# Ignore all contents inside these folders except the .gitkeep file
+output/emails/*
+!output/emails/.gitkeep
+
+output/schedules/*
+!output/schedules/.gitkeep
+
+output/expected_schedules/*
+!output/expected_schedules/.gitkeep
+
+store/*
+!store/.gitkeep
+
+test/*
+!test/.gitkeep
 
 # Mac system files
 .DS_Store
