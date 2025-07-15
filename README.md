@@ -13,7 +13,7 @@ This repository implements an **LLM-powered email scheduling agent** that:
 - ✅ **Event Extraction**: Parses sender, title, and body from emails using LLMs
 - 🗓️ **Schedule Management**: Maintains evolving event store and daily schedule
 - 📍 **Reasoning Pipeline**: Determines when to schedule, hold, or cancel events
-- 📡 **Langfuse Tracing**: Traces every step (LLM calls, decisions, email actions)
+- 📡 **Judgeval Tracing**: Traces every step (LLM calls, decisions, email actions)
 - 📁 **Modular Design**: Easy-to-read pipeline with clear component structure
 
 ---
