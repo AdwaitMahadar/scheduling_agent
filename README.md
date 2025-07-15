@@ -61,12 +61,16 @@ README.md                   # You're here!
    pip install -r requirements.txt
    ```
 
-2. **Run the agent**
+2. **Before running**
+   - Event memory: if first time, create a file `event_store.json` with empty array `[]` and make to sure emtpy it before every run.
+   - Clear outputs: Clear these folders before every run: `output/emails/` and `output/schedules/`
+
+3. **Run the agent**
    ```bash
    python main.py
    ```
 
-3. **Inspect outputs**
+4. **Inspect outputs**
    - Final schedules: `output/schedules/schedule_cycle_*.json`
    - Event memory: `output/store/event_store.json`
    - Traces: via [Langfuse](https://langfuse.com)
